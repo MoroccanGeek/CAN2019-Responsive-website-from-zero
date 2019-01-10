@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CAN 19</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<!--This is Petal Framework file-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shakrmedia/petal@0.11.1/dist/petal.min.css">
+    <link rel="stylesheet" href="css/Media.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/SlideStyle.css">
+	<link rel="stylesheet" href="css/Div_News.css">
+	<link rel="stylesheet" type="text/css" href="CSS/stylem.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<script src="js/responsive-nav.js"></script>
+    <script type="text/javascript" src="JS/petal.min.js"></script>
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+	<!--SVG animation-->
+	<script>
+		var p = document.querySelector('.animate'),
+		  offset = 600;
+		var offsetMe = function() {
+		  if (offset < 0) {
+			offset = 600;
+		  }
+		  p.style.strokeDashoffset = offset;
+		  offset = offset - 5;
+		  requestAnimationFrame(offsetMe);
+		}
+		offsetMe();
+	</script>
+    <header>
+      <a href="#Home" class="logo" data-scroll><img src="images/LogoCAN5.png" width="90px" height="50px"/></a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item active"><a href="#Home" data-scroll>Home</a></li>
+          <li class="menu-item"><a href="#Fields" data-scroll>Stadiums</a></li>
+          <li class="menu-item"><a href="#Hotels" data-scroll>Hotels</a></li>
+          <li class="menu-item"><a href="#Timeline" data-scroll>CAN Timeline</a></li>
+		  <li class="menu-item"><a href="#follow" data-scroll>Social Media</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="Home"  onmouseover="Stop()" onmouseout="init()">
+		<ul class="slides">
+			<input type="radio" name="radio-btn" id="img-1" checked />
+			<li class="slide-container">
+				<div class="slide stretch">
+					<a href="News/News-Slider1.html">
+						<img src="images/Slider-News1.jpg" />
+						<p>CAN 2019: the 14 stadiums of moroccan nomination file</p>
+					</a>
+				</div>
+				<div class="nav">
+					<label class="prev" onclick="PrevSlide(1)">&#x2039;</label>
+					<label id="clicker-1" class="next" onclick="NextSlide(1)">&#x203a;</label>
+				</div>
+			</li>
+
+			<input type="radio" name="radio-btn" id="img-2" />
+			<li class="slide-container">
+				<div class="slide">
+					<a href="News/News-Slider2.html">
+						<img src="images/Slider-News2.jpg" />
+						<p>FIFA to Review Possible 2030 Morocco-Europe World Cup Bid</p>
+					</a>
+				</div>
+				<div class="nav">
+					<label class="prev" onclick="PrevSlide(2)">&#x2039;</label>
+					<label id="clicker-2" class="next" onclick="NextSlide(2)">&#x203a;</label>
+				</div>
+			</li>
+
+			<input type="radio" name="radio-btn" id="img-3" />
+			<li class="slide-container">
+				<div class="slide">
+					<a href="News/News-Slider3.html">
+						<img src="images/Slider-News3.jpg" />
+						<p>Fast travels to stadiums: Africa's first high-speed train</p>
+					</a>
+				</div>
+				<div class="nav">
+					<label class="prev" onclick="PrevSlide(3)">&#x2039;</label>
+					<label id="clicker-3" class="next" onclick="NextSlide(3)">&#x203a;</label>
+				</div>
+			</li>
+
+			<input type="radio" name="radio-btn" id="img-4" />
+			<li class="slide-container">
+				<div class="slide">
+					<a href="News/News-Slider4.html">
+						<img src="images/Slider-News4.png" />
+						<p>Morocco Secures Historic 2-0 Win Against Cameroon</p>
+					</a>
+				</div>
+				<div class="nav">
+					<label class="prev" onclick="PrevSlide(4)">&#x2039;</label>
+					<label id="clicker-4" class="next" onclick="NextSlide(4)">&#x203a;</label>
+				</div>
+			</li>
+
+			<input type="radio" name="radio-btn" id="img-5" />
+			<li class="slide-container">
+				<div class="slide">
+				  <!-- <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" /> -->
+				  <a href="News/News-Slider5.html">
+						<img src="images/Slider-News5.jpg" />
+						<p>Renard: Morocco is Ready to Host 2019 CAN</p>
+					</a>
+				</div>
+				<div class="nav">
+					<label class="prev" onclick="PrevSlide(5)">&#x2039;</label>
+					<label id="clicker-5" class="next" onclick="NextSlide(5)">&#x203a;</label>
+				</div>
+			</li>
+
+			<input type="radio" name="radio-btn" id="img-6" />
+			<li class="slide-container">
+				<div class="slide">
+					<a href="News/News-Slider6.html">	
+						<img src="images/Slider-News6.jpg" />
+						<p>AFCON 2019: Morocco, South Africa front runners to replace Cameroon</p>
+					</a>
+				</div>
+				<div class="nav">
+					<label class="prev" onclick="PrevSlide(6)">&#x2039;</label>
+					<label id="clicker-6" class="next" onclick="NextSlide(6)">&#x203a;</label>
+				</div>
+			</li>
+			
+			
+			<li class="nav-dots container">
+			  <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+			  <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+			  <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+			  <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+			  <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+			  <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+			</li>
+		</ul>
+    </section>
+	
+	<section class="AllNews">
+		<p style="text-align:left;margin-left:10px;"><i class="petalicon petalicon-chevron-right"></i>Other News:</p>
+
+		<div class="gallery">
+			<a class="zoom" href="News/News1.html">
+				<img src="images/News-1.jpg" width="243.2" height="243.2">
+			</a>
+			<div class="descrip">Mabil's journey from refugee to role model </div>
+			<div class="More">
+				<a href="News/News1.html">
+					<i class="petalicon petalicon-chevron-right"></i>Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a class="zoom" href="News/News2.html">
+				<img src="images/News-2.jpg" width="243.2" height="243.2">
+			</a>
+			<div class="descrip">#Why_Be_Afraid: Saudi Hashtag Honors Morocco’s Nordin Amrabat</div>
+			<div class="More">
+				<a href="News/News2.html">
+					<i class="petalicon petalicon-chevron-right"></i>Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a class="zoom" href="News/News3.html">
+				<img src="images/News-3.jpg" width="243.2" height="243.2">
+			</a>
+			<div class="descrip">Orange is the new blue</div>
+			<div class="More">
+				<a href="News/News3.html">
+					<i class="petalicon petalicon-chevron-right"></i>Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="gallery">
+			<a class="zoom" href="News/News4.html">
+				<img src="images/News-4.jpg" width="243.2" height="243.2">
+			</a>
+			<div class="descrip">Hat-trick hero Seferovic: Switzerland's striking solution?</div>
+			<div class="More">
+				<a href="News/News4.html">
+					<i class="petalicon petalicon-chevron-right"></i>Read more
+				</a>
+			</div>
+		</div>
+		
+		<div class="gallery">
+			<a class="zoom" href="News/News5.html">
+				<img src="images/News-5.jpg" width="243.2" height="243.2">
+			</a>
+			<div class="descrip">CAN 2019: Morocco Officially Qualified after Malawi's defeat</div>
+			<div class="More">
+				<a href="News/News5.html">
+					<i class="petalicon petalicon-chevron-right"></i>Read more
+				</a>
+			</div>
+		</div>
+		
+		<div class="gallery">
+			<a class="zoom" href="News/News6.html">
+				<img src="images/News-6.jpg" width="243.2" height="243.2">
+			</a>
+			<div class="descrip">Egypt named as the hosts of 2019 Africa Cup of Nations</div>
+			<div class="More">
+				<a href="News/News6.html">
+					<i class="petalicon petalicon-chevron-right"></i>Read more
+				</a>
+			</div>
+		</div>
+	</section>
+	
+    <section id="Fields">
+		<button  class="btn" id="left3">&laquo;</button>
+		<button id="right3" class="btn">&raquo;</button>
+		<div class="box kolo">
+
+			<div class="block"><img src="images/Stadiums/Marrakech_Stad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Rabat_Stad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Fes_Stad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Casa_FutureStad2.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Nador_FutureStad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Oujda_FutureStad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Marrakech_FutureStad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Tanger_Stad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Casa_FutureStad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Meknes_FutureStad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Ouarzazate_FutureStad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Eljadida_FutureStad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Tetouan_FutureStad.jpg"></div>
+			<div class="block"><img src="images/Stadiums/Agadir_Stad.jpg"></div>
+
+		</div>
+		<div class="box desc">
+			
+			<div class="block b1">
+				<h4>Marrakech Grand Stadium</h4>
+				<!-- start view 1 -->
+				<div class="page-wrapper1 page-wrappe1">
+					<a class="btn trigger1 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper1">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">Marrakech Grand Stadium</span>
+							<a class="btn-close trigger1" href="javascript:;"></a>
+						</div> 
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+										<th scope="col">Current Capacity</th>
+										<th scope="col">Improvements</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-label="Current Capacity">41,245</td>
+										<td data-label="Improvements">
+											<ul>
+												<li>+<strong>8,000</strong> places</li>
+												<li>+<strong>102 VIP Boxes</strong></li>
+												<li>+<strong>4,600 m<sup>2</sup></strong> of indoor lounges</li>
+												<li>Reception village around the stadium</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- finish view 1 -->
+			</div>
+
+			<div class="block b1">     
+				<h4>Rabat Moulay Abdellah Stadium</h4>
+				<!-- start view 2 -->
+				<div class="page-wrapper2 page-wrappe2">
+					<a class="btn trigger2 aa" href="javascript:;">View</a>
+				</div>
+				<input type="hidden" name="">
+				<div class="modal-wrapper2">
+				    <div class="modal">
+					<div class="head">
+						<span id="nom_hotel">Rabat Moulay Abdellah Stadium</span>
+						<a class="btn-close trigger2" href="javascript:;"></a>
+					</div>
+					<div class="content">
+						<table>
+							<thead>
+								<tr>
+									<th scope="col">Current Capacity</th>
+									<th scope="col">Year of built</th>
+									<th scope="col">History</th>
+									<th scope="col">Improvements</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-label="Current Capacity">41,245</td>
+									<td data-label="Year of built">2000</td>
+									<td data-label="History">
+										<ul>
+											<li>Matches of the 1988 Africa Cup of Nations</li>
+											<li>2014 FIFA Club World Cup</li>
+											<li>2016 and 2017 Diamond League</li>
+											<li>The Pan Arab Games</li>
+										</ul>
+									</td>
+									<td data-label="Improvements">
+										<ul>
+										  <li>+<strong>20,000</strong> places</li>
+										  <li>+<strong>5,000 VIP Boxes</strong></li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				  </div>
+				</div>
+				<!-- finish view 2 -->
+			</div>
+
+			<div class="block b1">
+				<h4>Fes Stadium</h4>
+				<!-- start view 3 -->
+				<div class="page-wrapper3 page-wrappe3">
+					<a class="btn trigger3 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper3">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">Fes Stadium</span>
+							<a class="btn-close trigger3" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Capacity</th>
+									  <th scope="col">Year of built</th>
+									  <th scope="col">Improvements</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-label="Current Capacity">40,100</td>
+										<td data-label="Year of built">2002</td>
+										<td data-label="Improvements">
+											<ul>
+												<li>+<strong>5,992</strong> places</li>
+												<li>+<strong>45 VIP Boxes</strong></li>
+												<li>+Full roof with Cafe Shops</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 3 -->
+			</div>
+			
+			<div class="block b1">    
+				<h4>Casablanca Stadium 1</h4>
+				<div class="page-wrapper4 page-wrappe4">
+					<a class="btn trigger4 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper4">
+					<div class="modal futuristic">
+						<div class="head">
+							<span id="nom_hotel">Casablanca Stadium 1</span>
+							<a class="btn-close trigger4" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">90,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			<!-- finich view 4 -->
+			</div>	
+
+			<div class="block b1">     
+				<h4>Nador Stadium</h4>
+				<div class="page-wrapper5 page-wrappe5">
+					<a class="btn trigger5 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper5">
+					<div class="modal futuristic">
+						<div class="head">
+							<span id="nom_hotel">Nador Stadium</span>
+							<a class="btn-close trigger5" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">68,500</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 5 -->
+			</div>
+			
+			<div class="block b1">    
+				<h4>Oujda Stadium</h4>
+				<div class="page-wrapper6 page-wrappe6">
+					<a class="btn trigger6 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper6">
+					<div class="modal futuristic">
+						<div class="head">
+							<span id="nom_hotel">Oujda Stadium</span>
+							<a class="btn-close trigger6" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">45,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 6 -->
+			</div>
+			
+			<div class="block b1">    
+				<h4>Marrakech Stadium 2</h4>
+				<div class="page-wrapper7 page-wrappe7">
+					<a class="btn trigger7 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper7">
+					<div class="modal futuristic">
+						<div class="head">
+							<span id="nom_hotel">Marrakech Stadium 2</span>
+							<a class="btn-close trigger7" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">78,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 7 -->
+			</div>
+		
+			<div class="block b1">    
+				<h4>Ibn Batouta Tanger Stadium</h4>
+				<div class="page-wrapper8 page-wrappe8">
+					<a class="btn trigger8 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper8">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">Ibn Batouta Tanger Stadium</span>
+							<a class="btn-close trigger8" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+										<th scope="col">Current Capacity</th>
+										<th scope="col">History</th>
+										<th scope="col">Improvements</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-label="Current Capacity">44,500</td>
+										<td data-label="History">
+											<ul>
+											  <li>The 2018 African Nations Championship</li>
+											  <li>The 2011 and 2017 French Champions Trophy</li>
+											</ul>
+										</td>
+										<td data-label="Improvements">
+											<ul>
+											  <li>+<strong>20,500</strong> places</li>
+											  <li>+<strong>49 VIP Boxes</strong></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 8 -->
+			</div>
+			
+			<div class="block b1">    
+				<h4>Casablanca Stadium 2</h4>
+				<div class="page-wrapper9 page-wrappe9">
+					<a class="btn trigger9 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper9">
+					<div class="modal futuristic">
+						<div class="head">
+							<span id="nom_hotel">Casablanca Stadium 2</span>
+							<a class="btn-close trigger9" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">90,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 9 -->
+			</div>
+			
+			<div class="block b1">    
+				<h4>Meknes Stadium</h4>
+				<div class="page-wrapper10 page-wrappe10">
+					<a class="btn trigger10 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper10">
+					<div class="modal  futuristic">
+						<div class="head">
+							<span id="nom_hotel">Meknes Stadium</span>
+							<a class="btn-close trigger10" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">88,400</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 10 -->
+			</div>
+
+			<div class="block b1">    
+				<h4>Ouarzazate Stadium</h4>
+				<div class="page-wrapper11 page-wrappe11">
+					<a class="btn trigger11 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper11">
+					<div class="modal futuristic">
+						<div class="head">
+							<span id="nom_hotel">Ouarzazate Stadium</span>
+							<a class="btn-close trigger11" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">58,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 11 -->
+			</div>
+			
+			<div class="block b1">    
+				<h4>Eljadida Stadium</h4>
+				<div class="page-wrapper12 page-wrappe12">
+					<a class="btn trigger12 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper12">
+					<div class="modal  futuristic">
+						<div class="head">
+							<span id="nom_hotel">Eljadida Stadium</span>
+							<a class="btn-close trigger12" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">60,000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 12 -->
+			</div>
+			
+			<div class="block b1">    
+				<h4>Tetouan Stadium</h4>
+				<div class="page-wrapper13 page-wrappe13">
+					<a class="btn trigger13 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper13">
+					<div class="modal  futuristic">
+						<div class="head">
+							<span id="nom_hotel">Tetouan Stadium</span>
+							<a class="btn-close trigger13" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Status</th>
+									  <th scope="col">Designated Capacity</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td data-label="Current Status">In Build</td>
+									  <td data-label="Designated Capacity">45,600</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 13 -->
+			</div>
+
+			<div class="block b1">    
+				<h4>Agadir Adrar Stadium</h4>
+				<div class="page-wrapper14 page-wrappe14">
+					<a class="btn trigger14 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper14">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">Agadir Adrar Stadium</span>
+							<a class="btn-close trigger14" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table>
+								<thead>
+									<tr>
+									  <th scope="col">Current Capacity</th>
+									  <th scope="col">History</th>
+									  <th scope="col">Improvements</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-label="Current Capacity">45,480</td>
+										<td data-label="History">
+											<ul>
+											  <li>4 matches of the 2013 FIFA World Cup</li>
+											  <li>1 match of 2015 Africa Cup of Nations</li>
+											</ul>
+										</td>
+										<td data-label="Improvements">
+											<ul>
+											  <li>+<strong>5,000</strong> places</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 14 -->
+			</div>
+		
+		</div>
+		<script type="text/javascript">
+			$( "#right3" ).click(function() {
+				$( 'section#Fields .box' ).animate({
+					scrollLeft: '+=' + $('.box').width()
+				});
+			});
+			$( "#left3" ).click(function(){
+				$( 'section#Fields .box' ).animate({
+					scrollLeft: '-=' + $('.box').width()
+				});
+			});
+		</script>
+    </section>
+
+    <section id="Hotels">
+		<button  class="btn" id="left">&laquo;</button>
+		<button id="right" class="btn">&raquo;</button>
+		<div class="box kolo">
+
+			<div class="block"><img src="images/Hotels/Casa.jpg"></div>
+			<div class="block"><img src="images/Hotels/View.jpg"></div>
+			<div class="block"><img src="images/Hotels/Condomin.jpg"></div>
+			<div class="block"><img src="images/Hotels/Panam.jpg"></div>
+			<div class="block"><img src="images/Hotels/Ibis.jpg"></div>
+			<div class="block"><img src="images/Hotels/Villa.jpg"></div>
+		</div>
+		<div class="box desc">
+			<div class="block b1">
+				<h4> La Casablanca Hotel</h4>
+				<!-- start view 1 -->
+				<div class="page-wrapper1 page-wrappe1">
+					<a class="btn trigger1 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper1">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel"> La Casablanca Hotel</span>
+							<a class="btn-close trigger1" href="javascript:;"></a>
+						</div> 
+						<div class="content">
+							Stars: <i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><br>
+							Price: 206<i class="material-icons" style="font-size:19px;color:green">attach_money</i>/night<br>
+							Features: <i class="material-icons" style="color:green;">wifi</i><i class="material-icons" style="color:green;">airport_shuttle</i><i class="material-icons" style="color:green;">local_parking</i><i class="material-icons" style="color:green;">pool</i><br>
+							<p>Capacity: 10,500 Rooms</p>
+							<p>Distance from stadium: 0.5 miles</p>
+							<p>People's Ratings:8.6/10</p>
+							<a href="https://lecasablanca-hotel.com/en/index.html" style="width: 200px" class="btn col-2" target="_blank">Web-Site</a>
+						</div>
+						<!-- <span class="logo1 col-2"><img src="images/et.png" style=""></span> -->
+					</div>
+				</div>
+				<!-- finish view 1 -->
+			</div>
+			<div class="block b1">     
+				<h4>The view Hotel</h4>
+				<!-- start view 2 -->
+				<div class="page-wrapper2 page-wrappe2">
+					<a class="btn trigger2 aa" href="javascript:;">View</a>
+				</div>
+				<input type="hidden" name="">
+				<div class="modal-wrapper2">
+				    <div class="modal">
+					<div class="head">
+						<span id="nom_hotel">The View Hotel</span>
+						<a class="btn-close trigger2" href="javascript:;"></a>
+					</div>
+					<div class="content">
+						Stars: <i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><br>
+						Price: 209<i class="material-icons" style="font-size:19px;color:green">attach_money</i>/night<br>
+						Features: <i class="material-icons" style="color:green;">wifi</i><i class="material-icons" style="color:green;">local_parking</i><i class="material-icons" style="color:green;">pool</i><br>
+						Capacity: 22,000 Rooms<br>
+						Distance from stadium: 1.2 miles<br>
+						People's Ratings:8.4/10<br>
+						<a href="https://www.theviewhotelrabat.com/en" style="width: 200px" class="btn col-2" target="_blank">Site-Web</a>
+					</div>
+					<!-- <span class="logo1 col-2"><img src="images/et.png" style=""></span> -->
+				  </div>
+				</div>
+				<!-- finish view 2 -->
+			</div>
+			<div class="block b1">
+				<h4>Condominium Hotel</h4>
+				<!-- start view 3 -->
+				<div class="page-wrapper3 page-wrappe3">
+					<a class="btn trigger3 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper3">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">Condominium Hotel</span>
+							<a class="btn-close trigger3" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							Stars: <i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star-outline x2"></i><i class="petalicon petalicon-star-outline x2"></i><br>
+							Price: 66<i class="material-icons" style="font-size:19px;color:green">attach_money</i>/night<br>
+							Features: <i class="material-icons" style="color:green;">wifi</i><i class="material-icons" style="color:green;">local_parking</i><i class="material-icons" style="color:green;">pool</i><br>
+							Capacity: 15,600 Rooms<br>
+							Distance from stadium: 1.4 miles<br>
+							People's Ratings:7.6/10<br>
+							<a href="http://www.olivacondominiumhoteldouarkhalifabenmbarek.site/" style="width: 200px" class="btn col-2" target="_blank">Site-Web</a>
+						</div>  
+						<!-- <span class="logo1 col-2"><img src="images/et.png" style=""></span> -->
+					</div>
+				</div>
+			<!-- finich view 3 -->
+			</div>
+			<div class="block b1">    
+				<h4>Panam Hotel</h4>
+				<div class="page-wrapper4 page-wrappe4">
+					<a class="btn trigger4 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper4">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">Panam Hotel</span>
+							<a class="btn-close trigger4" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							Stars: <i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star-outline x2"></i><i class="petalicon petalicon-star-outline x2"></i><br>
+							Price: 46<i class="material-icons" style="font-size:19px;color:green">attach_money</i>/night<br>
+							Features: <i class="material-icons" style="color:green;">local_parking</i><i class="material-icons" style="color:green;">wifi</i><i class="material-icons" style="color:green;">airport_shuttle</i><i class="material-icons" style="color:green">local_bar</i><br>
+							Capacity: 10,000 Rooms<br>
+							Distance from stadium: 1.62 miles<br>
+							People's Ratings:7.8/10<br>
+							<a href="https://www.booking.com/hotel/ma/appart-tanger-marjane.fr.html" style="width: 200px" class="btn col-2" target="_blank">Site-Web</a>
+						</div>
+						<!-- <span class="logo1 col-2"><img src="images/et.png" style=""></span> -->
+					</div>
+				</div>
+			<!-- finich view 4 -->
+			</div>
+					
+			<div class="block b1">     
+				<h4>Ibis Budget</h4>
+				<div class="page-wrapper5 page-wrappe5">
+					<a class="btn trigger5 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper5">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">Ibis Budget Hotel</span>
+							<a class="btn-close trigger5" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							Stars: <i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star-outline x2"></i><i class="petalicon petalicon-star-outline x2"></i><i class="petalicon petalicon-star-outline x2"></i><br>
+							Price: 28<i class="material-icons" style="font-size:19px;color:green">attach_money</i>/night<br>
+							Features: <i class="material-icons" style="color:green;">wifi</i><i class="material-icons" style="color:green;">local_parking</i><i class="material-icons" style="color:green;">smoke_free</i><i class="material-icons" style="color:green;">free_breakfast</i><br>
+							Capacity: 1000 Rooms<br>
+							Distance from stadium: 3 miles<br>
+							People's Ratings: 7.6/10<br>
+							<a href="http://ibis-budget-agadir-hotel.hotel-dir.com/en/" style="width: 200px" class="btn col-2" target="_blank">Site-Web</a>
+						</div>  
+						<!-- <span class="logo1 col-2"><img src="images/et.png" style=""></span> -->
+					</div>
+				</div>
+			<!-- finich view 5 -->
+			</div>
+						 
+			<div class="block b1">    
+				<h4>Villa Agapanthe</h4>
+				<div class="page-wrapper6 page-wrappe6">
+					<a class="btn trigger6 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper6">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">Villa Agapante</span>
+							<a class="btn-close trigger6" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							Stars: <i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star x2"></i><i class="petalicon petalicon-star-outline x2"></i><i class="petalicon petalicon-star-outline x2"></i><br>
+							Price: 74<i class="material-icons" style="font-size:19px;color:green">attach_money</i>/night<br>
+							Features: <i class="material-icons" style="color:green;">local_parking</i><i class="material-icons" style="color:green;">pool</i><i class="material-icons" style="color:green;">wifi</i><i class="material-icons" style="color:green;">airport_shuttle</i><i class="material-icons" style="color:green;">free_breakfast</i><br>
+							Capacity: 500 Rooms<br>
+							Distance from stadium: 0.8 miles<br>
+							People's Ratings: 8/10<br>
+							<a href="http://www.villaagapanthefes.com/" style="width: 200px" class="btn col-2" target="_blank">Site-Web</a>
+						</div>  
+						<!-- <span class="logo1 col-2"><img src="images/et.png" style=""></span> -->
+					</div>
+				</div>
+			<!-- finich view 6 -->
+			</div>
+		</div>
+		<script type="text/javascript">
+			$( "#right" ).click(function() {
+				$( 'section#Hotels .box' ).animate({
+					scrollLeft: '+=' + $('.box').width()
+				});
+			});
+			$( "#left" ).click(function(){
+				$( 'section#Hotels .box' ).animate({
+					scrollLeft: '-=' + $('.box').width()
+				});
+			});
+		</script>
+    </section>
+
+    <section id="Timeline">
+		<button class="btn" id="left2">&laquo;</button>
+		<button class="btn" id="right2">&raquo;</button>
+		<div class="box kolo">
+			<div class="block"><img src="images/CANArchive/2002/2002.jpg"></div>
+			<div class="block"><img src="images/CANArchive/2004/2004.jpg"></div>
+			<div class="block"><img src="images/CANArchive/2006/2006.jpg"></div>
+			<div class="block"><img src="images/CANArchive/2008/2008.jpg"></div>
+			<div class="block"><img src="images/CANArchive/2010/2010.jpg"></div>
+			<div class="block"><img src="images/CANArchive/2012/2012.jpg"></div>
+			<div class="block"><img src="images/CANArchive/2013/2013.jpg"></div>
+			<div class="block"><img src="images/CANArchive/2015/2015.jpg"></div>
+			<div class="block"><img src="images/CANArchive/2017/2017.jpg"></div>
+		</div>
+		<div class="box desc">
+			<div class="block b1">
+				<h4>CAN 2002 - Mali</h4>
+				<!-- start view 1 -->
+				<div class="page-wrapper1 page-wrappe1">
+					<a class="btn trigger1 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper1">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2002 - Mali</span>
+							<a class="btn-close trigger1" href="javascript:;"></a>
+						</div> 
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2002/1-Cameron2002.png"></td>
+										<td><img src="images/CANArchive/2002/2-Senegal2002.png"></td>
+										<td><img src="images/CANArchive/2002/3-Nigeria2002.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Cameron</td>
+										<td>Senegal</td>
+										<td>Nigeria</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- finish view 1 -->
+			</div>
+
+			<div class="block b1">
+				<h4>CAN 2004 - Tunisia</h4>
+				<!-- start view 2 -->
+				<div class="page-wrapper2 page-wrappe2">
+					<a class="btn trigger2 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper2">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2004 - Tunisia</span>
+							<a class="btn-close trigger2" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2004/1-Tunisia2004.png"></td>
+										<td><img src="images/CANArchive/2004/2-Morocco2004.png"></td>
+										<td><img src="images/CANArchive/2004/3-Nigeria2004.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Tunisia</td>
+										<td>Morocco</td>
+										<td>Nigeria</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 3 -->
+			</div>
+
+			<div class="block b1">
+				<h4>CAN 2006 - Egypt</h4>
+				<!-- start view 3 -->
+				<div class="page-wrapper3 page-wrappe3">
+					<a class="btn trigger3 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper3">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2006 - Egypt</span>
+							<a class="btn-close trigger3" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2006/1-Egypt2006.png"></td>
+										<td><img src="images/CANArchive/2006/2-IvoryCoast2006.png"></td>
+										<td><img src="images/CANArchive/2006/3-Nigeria2006.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Egypt</td>
+										<td>IvoryCoast</td>
+										<td>Nigeria</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 3 -->
+			</div>
+			
+			<div class="block b1">    
+				<h4>CAN 2008 - Ghana</h4>
+				<div class="page-wrapper4 page-wrappe4">
+					<a class="btn trigger4 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper4">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2008 - Ghana</span>
+							<a class="btn-close trigger4" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2008/1-Egypt2008.png"></td>
+										<td><img src="images/CANArchive/2008/2-Cameron2008.png"></td>
+										<td><img src="images/CANArchive/2008/3-Ghana2008.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Egypt</td>
+										<td>Cameron</td>
+										<td>Ghana</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>
+					</div>
+				</div>
+			<!-- finich view 4 -->
+			</div>
+					
+			<div class="block b1">     
+				<h4>CAN 2010 - Angola</h4>
+				<div class="page-wrapper5 page-wrappe5">
+					<a class="btn trigger5 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper5">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2010 - Angola</span>
+							<a class="btn-close trigger5" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2010/1-Egypt2010.png"></td>
+										<td><img src="images/CANArchive/2010/2-Ghana2010.png"></td>
+										<td><img src="images/CANArchive/2010/3-Nigeria2010.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Egypt</td>
+										<td>Ghana</td>
+										<td>Nigeria</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 5 -->
+			</div>
+						 
+			<div class="block b1">    
+				<!--start view6-->
+				<h4>CAN 2012 - Gabon/Guinea</h4>
+				<div class="page-wrapper6 page-wrappe6">
+					<a class="btn trigger6 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper6">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2012 - Gabon/Guinea</span>
+							<a class="btn-close trigger6" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2012/1-Zambia2012.png"></td>
+										<td><img src="images/CANArchive/2012/2-IvoryCoast2012.png"></td>
+										<td><img src="images/CANArchive/2012/3-Mali2012.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Zambia</td>
+										<td>IvoryCoast</td>
+										<td>Mali</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>  
+					</div>
+				</div>
+			<!-- finich view 6 -->
+			</div>
+			
+			<div class="block b1">
+				<!--start view 7-->
+				<h4>CAN 2013 - South Africa</h4>
+				<div class="page-wrapper7 page-wrappe7">
+					<a class="btn trigger7 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper7">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2013 - South Africa</span>
+							<a class="btn-close trigger7" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2013/1-Nigeria2013.png"></td>
+										<td><img src="images/CANArchive/2013/2-BurkinaFaso2013.png"></td>
+										<td><img src="images/CANArchive/2013/3-Mali2013.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nigeria</td>
+										<td>BurkinaFaso</td>
+										<td>Mali</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>  
+					</div>
+				</div>
+				<!-- finich view 8 -->
+			</div>
+			
+			<div class="block b1">
+				<!--start view 8-->
+				<h4>CAN 2015 - Guinea</h4>
+				<div class="page-wrapper8 page-wrappe8">
+					<a class="btn trigger8 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper8">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2015 - Guinea</span>
+							<a class="btn-close trigger8" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2015/1-IvoryCoast2015.png"></td>
+										<td><img src="images/CANArchive/2015/2-Ghana2015.png"></td>
+										<td><img src="images/CANArchive/2015/3-DrCongo2015.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>IvoryCoast</td>
+										<td>Ghana</td>
+										<td>DR.Congo</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>  
+					</div>
+				</div>
+				<!-- finich view 8 -->
+			</div>
+			
+			<div class="block b1">
+				<!--start view 9-->
+				<h4>CAN 2017 - Gabon</h4>
+				<div class="page-wrapper9 page-wrappe9">
+					<a class="btn trigger9 aa" href="javascript:;">View</a>
+				</div>
+				<div class="modal-wrapper9">
+					<div class="modal">
+						<div class="head">
+							<span id="nom_hotel">CAN 2017 - Gabon</span>
+							<a class="btn-close trigger9" href="javascript:;"></a>
+						</div>
+						<div class="content">
+							<table style="width:100%;color:#fff;">
+								<thead>
+									<tr>
+										<td><img src="images/CANArchive/2017/1-Cameron2017.png"></td>
+										<td><img src="images/CANArchive/2017/2-Egypt2017.png"></td>
+										<td><img src="images/CANArchive/2017/3-BurkinaFaso2017.png"></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Cameron</td>
+										<td>Egypt</td>
+										<td>BurkinaFaso</td>
+									</tr>
+								</tbdoy>
+								<tfooter>
+									<tr>
+										<td><i class='fas fa-medal' style='font-size:40px;color:gold'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:silver'></i></td>
+										<td><i class='fas fa-medal' style='font-size:40px;color:#cd7f32'></i></td>
+									</tr>
+								</tfooter>
+							</table>
+						</div>  
+					</div>
+				</div>
+				<!-- finich view 9 -->
+			</div>
+		</div>
+		<script type="text/javascript">
+			$( "#right2" ).click(function() {
+				$( 'section#Timeline .box' ).animate({
+					scrollLeft: '+=' + $('.box').width()
+				});
+			});
+			$( "#left2" ).click(function(){
+				$( 'section#Timeline .box' ).animate({
+					scrollLeft: '-=' + $('.box').width()
+				});
+			});
+		</script>
+    </section>
+	
+	<section id="follow">
+      <p><b>Follow us on</b></p>
+	  <div>
+		<a href="#" class='fab fa-facebook-f'></a>
+		<a href="#" class='fab fa-twitter'></a>
+		<a href="#" class='fab fa-youtube'></a>
+		<a href="#" class='fab fa-instagram'></a>
+		<!-- <a href="#" target="_blank" class="fa fa-facebook"></a> -->
+		<!-- <a href="#" target="_blank" class="fa fa-twitter"></a> -->
+		<!-- <a href="#" target="_blank" class="fa fa-youtube"></a> -->
+		<!-- <a href="#" target="_blank" class="fa fa-instagram"></a> -->
+	  </div>
+	</section>
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+	<script type="text/javascript" src="JS/index.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	
+	<script>
+		var myIndex = 1;
+		var Timer=setInterval(auto, 2000);
+		
+		function Stop(){
+			clearInterval(Timer);
+			Timer=0;
+		}
+		function init(){
+			Timer=setInterval(auto, 2000);
+		}
+		
+		function auto(){
+			var clicker=document.getElementById("clicker-"+myIndex);
+			clicker.click();
+			if(myIndex==6)
+				myIndex=0;
+			myIndex++;
+		}
+		//Previous of Slide number n
+		function PrevSlide(n) {
+			var num;
+			if(n==1)
+				num=n+5;
+			else
+				num=n-1;
+				
+			document.getElementsByClassName("prev")[n-1].setAttribute("for", "img-"+num);
+			myIndex=num;
+		}
+		
+		//Next of Slide number n
+		function NextSlide(n) {
+			var num;
+			if(n==6)
+				num=7-n;
+			else
+				num=n+1;
+			document.getElementsByClassName("next")[n-1].setAttribute("for", "img-"+num);
+			myIndex=num-1;
+		}	
+	</script>
+  </body>
+</html>
