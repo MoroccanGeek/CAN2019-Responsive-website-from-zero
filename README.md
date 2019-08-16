@@ -21,19 +21,6 @@ The technologies allowed in the project are: HTML5.2, CSS3 and JavaScript using,
 mandatory, the Frameworks distributed by the draw of December 5, 2018.
 The integration of some API (Application Programming Interface) is desirable.
 
-## Getting Started
-
-Include the line below inside the <head> of your HTML file. Place it before any other site page stylesheets.
-
-```
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shakrmedia/petal@0.11.1/dist/petal.min.css">
-```
-The CDN link will provide the latest minified pre-built version of Petal with default settings.
-
-Now you can use all the Petal classes and styles in your project's HTML file.
-
-Explore more in Petal's documentation.
-
 ## Built With
 * [Petal](https://shakrmedia.github.io/petal/) - CSS Framework
 
