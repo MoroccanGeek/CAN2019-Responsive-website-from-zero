@@ -35,5 +35,8 @@ Now you can use all the Petal classes and styles in your project's HTML file.
 Explore more in Petal's documentation.
 
 ## Built With
-
 * [Petal](https://shakrmedia.github.io/petal/) - CSS Framework
+
+<p align="center">
+    <img width="100" height="100" src="http://shakrmedia.github.io/petal/assets/petal-logo.svg">
+</p>
