@@ -27,3 +27,5 @@ The integration of some API (Application Programming Interface) is desirable.
 <p align="center">
     <img width="100" height="100" src="http://shakrmedia.github.io/petal/assets/petal-logo.svg">
 </p>
+
+* [jQuery](https://jquery.com/)
